@@ -112,6 +112,15 @@
                             <constraint firstItem="f1x-oL-2mp" firstAttribute="centerX" secondItem="oNn-pK-tk9" secondAttribute="centerX" id="Ir8-pE-iMm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="MJ1-jK-c2Y" id="oL9-3G-Frs"/>
+                        <outlet property="answer2" destination="uh4-SS-fMU" id="3NB-5v-dK6"/>
+                        <outlet property="answer3" destination="BQ9-4K-PXF" id="Kdb-HS-jJP"/>
+                        <outlet property="answer4" destination="LXZ-2B-sij" id="pM4-aa-9cC"/>
+                        <outlet property="question" destination="LUu-mb-UiV" id="Ki4-fU-FYl"/>
+                        <outlet property="questionNum" destination="orP-Dl-u3o" id="1mR-Wy-FgV"/>
+                        <outlet property="questionTopic" destination="jnr-lb-gfY" id="etS-ad-asp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYw-O4-TRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
