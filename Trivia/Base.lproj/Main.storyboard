@@ -57,6 +57,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapAnswer1:" destination="1VV-Gy-t1H" eventType="touchUpInside" id="prx-K3-gJF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uh4-SS-fMU">
                                         <rect key="frame" x="0.0" y="460" width="368" height="50"/>
@@ -72,6 +75,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapAnswer2:" destination="1VV-Gy-t1H" eventType="touchUpInside" id="LBG-YQ-aTj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-4K-PXF">
                                         <rect key="frame" x="0.0" y="532" width="368" height="50"/>
@@ -87,6 +93,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapAnswer3:" destination="1VV-Gy-t1H" eventType="touchUpInside" id="kcL-Ga-nhC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-2B-sij">
                                         <rect key="frame" x="0.0" y="604" width="368" height="50"/>
@@ -102,6 +111,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="didTapAnswer4:" destination="1VV-Gy-t1H" eventType="touchUpInside" id="Rqg-Il-rDN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
