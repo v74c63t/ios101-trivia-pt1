@@ -21,11 +21,14 @@ class TriviaViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let triviaQuestion1 = TriviaQuestion(question:"What was the first weapon pack for 'PAYDAY'?", topic: "Entertainment: Games", answer1: "The Overkill Pack", answer2: "The Gage Weapon Pack #1", answer3: "The Gage Chilvary Pack", answer4: "The Gage Historical Pack", num: 1, correctAnswer: "The Gage Weapon Pack #1")
-        let triviaQuestions = [TriviaQuestion(question:"What was the first weapon pack for 'PAYDAY'", topic: "Entertainment: Games", answer1: "The Overkill Pack", answer2: "The Gage Weapon Pack #1", answer3: "The Gage Chilvary Pack", answer4: "The Gage Historical Pack", num: 1, correctAnswer: "The Gage Weapon Pack #1"), TriviaQuestion(question:"", topic: "", answer1: "", answer2: "", answer3: "", answer4: "", num: 2, correctAnswer: ""), TriviaQuestion(question:"", topic: "", answer1: "", answer2: "", answer3: "", answer4: "", num: 3, correctAnswer: "")]
+        let triviaQuestion2 = TriviaQuestion(question:"Which of these founding fathers of the United States of America later became president?", topic: "History", answer1: "Roger Sherman", answer2: "James Monroe", answer3: "Samuel Adams", answer4: "Alexander Hamilton", num: 2, correctAnswer: "James Monroe")
+        let triviaQuestion3 = TriviaQuestion(question:"What is the last song on the first Panic! At the Disco album?", topic: "Entertainment: Music", answer1: "I Write Sins Not Tregedies", answer2: "Lying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off", answer3: "Nails for Breakfast, Tacks for Snacks", answer4: "Build God, Then We'll Talk", num: 3, correctAnswer: "Build God, Then We'll Talk")
+
+        let triviaQuestions = [triviaQuestion1, triviaQuestion2, triviaQuestion3]
         configure(with: triviaQuestion1)
     }
     private func configure(with triviaQuestion: TriviaQuestion){
-        questionNum.text = "Question " + String(triviaQuestion.num)
+        questionNum.text = "Question: " + String(triviaQuestion.num) + "/3 (will get from array later)"
         questionTopic.text = triviaQuestion.topic
         question.text = triviaQuestion.question
         answer1.setTitle(triviaQuestion.answer1, for: .normal)
