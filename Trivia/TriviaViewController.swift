@@ -20,7 +20,19 @@ class TriviaViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let triviaQuestion1 = TriviaQuestion(question:"What was the first weapon pack for 'PAYDAY'?", topic: "Entertainment: Games", answer1: "The Overkill Pack", answer2: "The Gage Weapon Pack #1", answer3: "The Gage Chilvary Pack", answer4: "The Gage Historical Pack", num: 1, correctAnswer: "The Gage Weapon Pack #1")
+        let triviaQuestions = [TriviaQuestion(question:"What was the first weapon pack for 'PAYDAY'", topic: "Entertainment: Games", answer1: "The Overkill Pack", answer2: "The Gage Weapon Pack #1", answer3: "The Gage Chilvary Pack", answer4: "The Gage Historical Pack", num: 1, correctAnswer: "The Gage Weapon Pack #1"), TriviaQuestion(question:"", topic: "", answer1: "", answer2: "", answer3: "", answer4: "", num: 2, correctAnswer: ""), TriviaQuestion(question:"", topic: "", answer1: "", answer2: "", answer3: "", answer4: "", num: 3, correctAnswer: "")]
+        configure(with: triviaQuestion1)
     }
-
+    private func configure(with triviaQuestion: TriviaQuestion){
+        questionNum.text = "Question " + String(triviaQuestion.num)
+        questionTopic.text = triviaQuestion.topic
+        question.text = triviaQuestion.question
+        answer1.setTitle(triviaQuestion.answer1, for: .normal)
+        answer2.setTitle(triviaQuestion.answer2, for: .normal)
+        answer3.setTitle(triviaQuestion.answer3, for: .normal)
+        answer4.setTitle(triviaQuestion.answer4, for: .normal)
+        
+    }
 
 }

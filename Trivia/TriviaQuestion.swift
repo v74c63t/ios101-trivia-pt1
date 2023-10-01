@@ -15,4 +15,5 @@ struct TriviaQuestion{
     let answer3: String
     let answer4: String
     let num: Int
+    let correctAnswer: String
 }

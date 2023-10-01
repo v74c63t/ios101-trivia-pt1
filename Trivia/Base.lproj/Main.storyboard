@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-oL-2mp">
-                                <rect key="frame" x="12.666666666666657" y="79" width="368" height="654"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-oL-2mp">
+                                <rect key="frame" x="12.666666666666657" y="89" width="368" height="654"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orP-Dl-u3o">
                                         <rect key="frame" x="119.99999999999997" y="0.0" width="127.66666666666666" height="30"/>
@@ -32,7 +32,7 @@
                                         <color key="textColor" systemColor="systemMintColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUu-mb-UiV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUu-mb-UiV">
                                         <rect key="frame" x="24.333333333333343" y="104" width="319" height="262"/>
                                         <color key="backgroundColor" red="0.15405285839999999" green="0.72811615519999995" blue="1" alpha="0.2843646614" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -43,7 +43,7 @@
                                         <color key="textColor" systemColor="systemMintColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJ1-jK-c2Y">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MJ1-jK-c2Y">
                                         <rect key="frame" x="0.0" y="388" width="368" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="32B-Gp-P0t"/>
@@ -58,7 +58,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uh4-SS-fMU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uh4-SS-fMU">
                                         <rect key="frame" x="0.0" y="460" width="368" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="368" id="8nx-DQ-BG6"/>
@@ -73,7 +73,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-4K-PXF">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-4K-PXF">
                                         <rect key="frame" x="0.0" y="532" width="368" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="368" id="fCT-V3-1Sw"/>
@@ -88,7 +88,7 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-2B-sij">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-2B-sij">
                                         <rect key="frame" x="0.0" y="604" width="368" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="368" id="bqP-q2-okA"/>
@@ -109,6 +109,7 @@
                         <viewLayoutGuide key="safeArea" id="q3b-3m-SQG"/>
                         <color key="backgroundColor" red="0.064972437941405087" green="0.11677494175647181" blue="0.34431841293561094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="f1x-oL-2mp" firstAttribute="top" secondItem="q3b-3m-SQG" secondAttribute="top" constant="30" id="Cck-eQ-S6n"/>
                             <constraint firstItem="f1x-oL-2mp" firstAttribute="centerX" secondItem="oNn-pK-tk9" secondAttribute="centerX" id="Ir8-pE-iMm"/>
                         </constraints>
                     </view>
