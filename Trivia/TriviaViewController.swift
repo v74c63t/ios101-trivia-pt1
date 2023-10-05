@@ -20,6 +20,7 @@ class TriviaViewController: UIViewController {
     private var triviaQuestions = [TriviaQuestion]()
     private var selectedTriviaQuestionIndex = 0
     private var correctAns = 0
+    private var num = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,19 +110,21 @@ class TriviaViewController: UIViewController {
         correctAns = 0
         selectedTriviaQuestionIndex = 0
         triviaQuestions.shuffle()
+        num = 1
     }
     
     private func createTriviaQuestions() -> [TriviaQuestion]{
-        let triviaQuestion1 = TriviaQuestion(question:"What was the first weapon pack for 'PAYDAY'?", topic: "Entertainment: Games", answers: ["The Overkill Pack", "The Gage Weapon Pack #1", "The Gage Chilvary Pack", "The Gage Historical Pack"], num: 1, correctAnswer: "The Gage Weapon Pack #1")
-        let triviaQuestion2 = TriviaQuestion(question:"Which of these founding fathers of the United States of America later became president?", topic: "History", answers: ["Roger Sherman", "James Monroe",  "Samuel Adams", "Alexander Hamilton"], num: 2, correctAnswer: "James Monroe")
-        let triviaQuestion3 = TriviaQuestion(question:"What is the last song on the first Panic! At the Disco album?", topic: "Entertainment: Music", answers: ["I Write Sins Not Tregedies", "Lying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off", "Nails for Breakfast, Tacks for Snacks", "Build God, Then We'll Talk"], num: 3, correctAnswer: "Build God, Then We'll Talk")
+        let triviaQuestion1 = TriviaQuestion(question:"What was the first weapon pack for 'PAYDAY'?", topic: "Entertainment: Games", answers: ["The Overkill Pack", "The Gage Weapon Pack #1", "The Gage Chilvary Pack", "The Gage Historical Pack"], correctAnswer: "The Gage Weapon Pack #1")
+        let triviaQuestion2 = TriviaQuestion(question:"Which of these founding fathers of the United States of America later became president?", topic: "History", answers: ["Roger Sherman", "James Monroe",  "Samuel Adams", "Alexander Hamilton"], correctAnswer: "James Monroe")
+        let triviaQuestion3 = TriviaQuestion(question:"What is the last song on the first Panic! At the Disco album?", topic: "Entertainment: Music", answers: ["I Write Sins Not Tregedies", "Lying Is The Most Fun A Girl Can Have Without Taking Her Clothes Off", "Nails for Breakfast, Tacks for Snacks", "Build God, Then We'll Talk"], correctAnswer: "Build God, Then We'll Talk")
 
         return [triviaQuestion1, triviaQuestion2, triviaQuestion3]
     }
     
     private func configure(with triviaQuestion: TriviaQuestion){
         let shuffledAns = triviaQuestion.answers.shuffled()
-        questionNum.text = "Question: " + String(triviaQuestion.num) + "/" + String(triviaQuestions.count)
+        questionNum.text = "Question: " + String(num) + "/" + String(triviaQuestions.count)
+        num += 1
         questionTopic.text = triviaQuestion.topic
         question.text = triviaQuestion.question
         answer1.setTitle(shuffledAns[0], for: .normal)
