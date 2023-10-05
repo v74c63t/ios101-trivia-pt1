@@ -2,9 +2,9 @@
 
 Submitted by: **Vanessa Tang**
 
-**Trivia** is an app that ... [TODO] 
+**Trivia** is an app that shows the users a set of questions that can be answered in succession. It keeps track of the amount of questions left and the current question the user is on. When all the questions are answered, it will display to the users the amount of questions they answered correctly out of all the questions. They will also have an option to restart and answer the questions with the questions and answer choices appearing in a different order from before.
 
-Time spent: **X** hours spent in total so far: 2 + 5-6 hrs
+Time spent: **8** hours spent in total
 
 ## Required Features
 
@@ -24,7 +24,9 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+<!-- - [ ] List anything else that you can get done to improve the app functionality! -->
+- [x] Randomized the order of the answer choices for each problem so they will likely not appear in the same order as a previous game
+- [x] Randomized the question order so it will not likely appear in the same order as a previous game (since there is a small amount of questions this will not take too long to run)
 
 ## Video Walkthrough
 
@@ -36,6 +38,8 @@ The following **additional** features are implemented:
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+- I had a lot of issues getting the constraints to work and could not really get most of the views to be the size I wanted them to be. It took a lot of trial and error to get everything to look the way I wanted them to appear. I felt like I did not get enough practice with constraints which is why I struggled.
 
 ## License
 
