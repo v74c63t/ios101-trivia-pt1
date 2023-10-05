@@ -46,8 +46,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MJ1-jK-c2Y">
                                         <rect key="frame" x="0.0" y="399.66666666666669" width="368" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="32B-Gp-P0t"/>
-                                            <constraint firstAttribute="width" constant="368" id="mtO-PB-qn0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="32B-Gp-P0t"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="368" id="mtO-PB-qn0"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Answer 1">
@@ -64,8 +64,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uh4-SS-fMU">
                                         <rect key="frame" x="0.0" y="471.66666666666663" width="368" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="368" id="8nx-DQ-BG6"/>
-                                            <constraint firstAttribute="height" constant="50" id="f3p-Gp-2Vt"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="368" id="8nx-DQ-BG6"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="f3p-Gp-2Vt"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Answer 2">
@@ -82,8 +82,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-4K-PXF">
                                         <rect key="frame" x="0.0" y="543.66666666666663" width="368" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="368" id="fCT-V3-1Sw"/>
-                                            <constraint firstAttribute="height" constant="50" id="jFd-VR-hie"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="368" id="fCT-V3-1Sw"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jFd-VR-hie"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Answer 3">
@@ -100,8 +100,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-2B-sij">
                                         <rect key="frame" x="0.0" y="615.66666666666663" width="368" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="368" id="bqP-q2-okA"/>
-                                            <constraint firstAttribute="height" constant="50" id="wcy-WN-9Pw"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="368" id="bqP-q2-okA"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="wcy-WN-9Pw"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Answer 4">
@@ -116,6 +116,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="LUu-mb-UiV" firstAttribute="leading" secondItem="f1x-oL-2mp" secondAttribute="leading" constant="9" id="JjT-Bv-fD6"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUu-mb-UiV" secondAttribute="trailing" constant="9" id="eaR-FX-57t"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="q3b-3m-SQG"/>
