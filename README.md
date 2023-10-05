@@ -4,7 +4,7 @@ Submitted by: **Vanessa Tang**
 
 **Trivia** is an app that ... [TODO] 
 
-Time spent: **X** hours spent in total so far: 2
+Time spent: **X** hours spent in total so far: 2 + 5-6 hrs
 
 ## Required Features
 
@@ -17,10 +17,10 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] User can use the vertical orientation of the app on any device
+- [x] User can use the vertical orientation of the app on any device
 - [x] User can track the question they are on and how many questions are left
-- [ ] User can see how many questions they got correct after answering all questions
-- [ ] User should be able to restart the game after they've finished answering all questions
+- [x] User can see how many questions they got correct after answering all questions
+- [x] User should be able to restart the game after they've finished answering all questions
 
 The following **additional** features are implemented:
 
