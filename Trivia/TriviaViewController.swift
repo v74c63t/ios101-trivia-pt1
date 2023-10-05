@@ -26,6 +26,10 @@ class TriviaViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        question.layer.cornerRadius = 5
+        question.clipsToBounds = true
+        question.layer.borderWidth = 0.5
+        question.layer.borderColor = UIColor.black.cgColor
         triviaQuestions = createTriviaQuestions()
         configure(with: triviaQuestions[selectedTriviaQuestionIndex])
     }
