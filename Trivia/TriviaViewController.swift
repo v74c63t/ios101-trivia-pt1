@@ -33,32 +33,81 @@ class TriviaViewController: UIViewController {
         if(answer1.titleLabel!.text == triviaQuestions[selectedTriviaQuestionIndex].correctAnswer){
             correctAns += 1
         }
-        selectedTriviaQuestionIndex = min(triviaQuestions.count - 1, selectedTriviaQuestionIndex + 1)
-        configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        selectedTriviaQuestionIndex = selectedTriviaQuestionIndex + 1
+        if(selectedTriviaQuestionIndex != triviaQuestions.count){
+            configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        }
+        else{
+            // pop up window
+            let results = UIAlertController(title: "Game over!", message: "Final Score: " + String(correctAns) + "/" + String(triviaQuestions.count), preferredStyle: .alert)
+            results.addAction(UIAlertAction(title: NSLocalizedString("Restart", comment: "Default action"), style: .default, handler: { _ in
+                self.resetGame()
+                self.configure(with: self.triviaQuestions[self.selectedTriviaQuestionIndex])
+            }))
+            self.present(results, animated: true, completion: nil)
+        }
     }
     
     @IBAction func didTapAnswer2(_ sender: UIButton) {
         if(answer2.titleLabel!.text == triviaQuestions[selectedTriviaQuestionIndex].correctAnswer){
             correctAns += 1
         }
-        selectedTriviaQuestionIndex = min(triviaQuestions.count - 1, selectedTriviaQuestionIndex + 1)
-        configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        selectedTriviaQuestionIndex = selectedTriviaQuestionIndex + 1
+        if(selectedTriviaQuestionIndex != triviaQuestions.count){
+            configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        }
+        else{
+            // pop up window
+            let results = UIAlertController(title: "Game over!", message: "Final Score: " + String(correctAns) + "/" + String(triviaQuestions.count), preferredStyle: .alert)
+            results.addAction(UIAlertAction(title: NSLocalizedString("Restart", comment: "Default action"), style: .default, handler: { _ in
+                self.resetGame()
+                self.configure(with: self.triviaQuestions[self.selectedTriviaQuestionIndex])
+            }))
+            self.present(results, animated: true, completion: nil)
+        }
     }
     
     @IBAction func didTapAnswer3(_ sender: UIButton) {
         if(answer3.titleLabel!.text == triviaQuestions[selectedTriviaQuestionIndex].correctAnswer){
             correctAns += 1
         }
-        selectedTriviaQuestionIndex = min(triviaQuestions.count - 1, selectedTriviaQuestionIndex + 1)
-        configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        selectedTriviaQuestionIndex = selectedTriviaQuestionIndex + 1
+        if(selectedTriviaQuestionIndex != triviaQuestions.count){
+            configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        }
+        else{
+            // pop up window
+            let results = UIAlertController(title: "Game over!", message: "Final Score: " + String(correctAns) + "/" + String(triviaQuestions.count), preferredStyle: .alert)
+            results.addAction(UIAlertAction(title: NSLocalizedString("Restart", comment: "Default action"), style: .default, handler: { _ in
+                self.resetGame()
+                self.configure(with: self.triviaQuestions[self.selectedTriviaQuestionIndex])
+            }))
+            self.present(results, animated: true, completion: nil)
+        }
     }
     
     @IBAction func didTapAnswer4(_ sender: UIButton) {
         if(answer4.titleLabel!.text == triviaQuestions[selectedTriviaQuestionIndex].correctAnswer){
             correctAns += 1
         }
-        selectedTriviaQuestionIndex = min(triviaQuestions.count - 1, selectedTriviaQuestionIndex + 1)
-        configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        selectedTriviaQuestionIndex = selectedTriviaQuestionIndex + 1
+        if(selectedTriviaQuestionIndex != triviaQuestions.count){
+            configure(with: triviaQuestions[selectedTriviaQuestionIndex])
+        }
+        else{
+            // pop up window
+            let results = UIAlertController(title: "Game over!", message: "Final Score: " + String(correctAns) + "/" + String(triviaQuestions.count), preferredStyle: .alert)
+            results.addAction(UIAlertAction(title: NSLocalizedString("Restart", comment: "Default action"), style: .default, handler: { _ in
+                self.resetGame()
+                self.configure(with: self.triviaQuestions[self.selectedTriviaQuestionIndex])
+            }))
+            self.present(results, animated: true, completion: nil)
+        }
+    }
+    
+    private func resetGame() {
+        correctAns = 0
+        selectedTriviaQuestionIndex = 0
     }
     
     private func createTriviaQuestions() -> [TriviaQuestion]{
@@ -77,7 +126,6 @@ class TriviaViewController: UIViewController {
         answer2.setTitle(triviaQuestion.answer2, for: .normal)
         answer3.setTitle(triviaQuestion.answer3, for: .normal)
         answer4.setTitle(triviaQuestion.answer4, for: .normal)
-        print(correctAns)
         
     }
 
