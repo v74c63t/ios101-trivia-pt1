@@ -10,10 +10,11 @@ import Foundation
 struct TriviaQuestion{
     let question: String
     let topic: String
-    let answer1: String
-    let answer2: String
-    let answer3: String
-    let answer4: String
+//    let answer1: String
+//    let answer2: String
+//    let answer3: String
+//    let answer4: String
+    var answers: [String]
     let num: Int
     let correctAnswer: String
 }
