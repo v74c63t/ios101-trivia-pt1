@@ -40,6 +40,7 @@ The following **additional** features are implemented:
 Describe any challenges encountered while building the app.
 
 - I had a lot of issues getting the constraints to work and could not really get most of the views to be the size I wanted them to be. It took a lot of trial and error to get everything to look the way I wanted them to appear. I felt like I did not get enough practice with constraints which is why I struggled.
+- Since I struggled with the constraints, it made me spend a lot of time trying to make everything adjust correctly so it will display without clipping on any device. I had to try with different constraints to see if it would clip and I think I was able to get it to work properly after a few hours.
 
 ## License
 
