@@ -4,7 +4,7 @@ Submitted by: **Vanessa Tang**
 
 **Trivia** is an app that shows the users a set of questions that can be answered in succession. It keeps track of the amount of questions left and the current question the user is on. When all the questions are answered, it will display to the users the amount of questions they answered correctly out of all the questions. They will also have an option to restart and answer the questions with the questions and answer choices appearing in a different order from before.
 
-Time spent: **8** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
